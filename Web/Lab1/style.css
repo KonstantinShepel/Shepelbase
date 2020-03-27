@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sergoe UI';
+  background: #40E0D0;
+}
+
+.body {
+  margin-left: 360px;
+  padding: 30px;
+}
+
+.beginText {
+  font-style: italic;
+}
+
+img {
+  float:left;
+  margin: 7px 7px 7px 7px;
+}
+
+.titleShedule {
+  margin: 50px;
+}
+
+.about {
+  width: 1200px;
+  font-style: italic;
+}
+
+.shedule {
+  counter-reset: li; 
+  list-style: none; 
+  font: 14px "Trebuchet MS", "Lucida Sans";
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+  .shedule p {
+    
+
+  display: block;
+  position: relative;
+  margin: 50px;
+  padding: .4em .4em .4em .8em;
+  margin: .5em 0 .5em 2.5em;
+  background: #D3D4DA;
+  color: #444;
+  text-decoration: none;
+  transition: all .3s ease-out;
+  }
+
+  .shedule p:hover {background: #DCDDE1;}       
+  .shedule p:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  background: #4682B4;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+  }
+
+  .shedule p:after {
+  position: absolute;
+  content: "";
+  border: .5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -.5em;
+  transition: all .3s ease-out;
+  }
+  .shedule p:hover:after {
+  left: -.5em;
+  border-left-color: #9097A2;
+  }
+
+  .math {
+    width: 1200px;
+    font-style: italic;
+    margin: 5px;
+  }
+
+  .scientWork {
+    list-style: none;
+    font-family: "Lucida Sans";
+  }
+  .scientWork li {
+    position: relative;
+    padding: 10px 0 10px 40px;
+    color: #1C3B55;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+.navbar {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  background-color: #000000;
+  text-align: center;
+  z-index: 2;
+}
+
+.navbar > .side-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.nav-item > .nav-link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.1em;
+  padding: 1em;
+  flex: 1;
+}
+
+.nav-item > .nav-link:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.nav-item > .site-name {
+  text-decoration: none;
+  padding: 1.3em;
+  font-size: 2em;
+  color: whitesmoke;
+}
+
+
+
+.footer {
+  display: flex;
+  position: fixed;
+  background: #000000;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 70px;
+  font-size: 16px;
+  color: #40E0D0;
+  z-index: 1;
+}
+
+.footer p {
+font-size: 16px;
+margin: 15px 20px;
+}
